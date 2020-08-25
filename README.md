@@ -12,4 +12,4 @@
 * Use Node, Express, and MongoDB with JavaScript in a server-side capacity.
 
 ## Assignments
-- [x] Assignment 1: Use VS Code to create a simple webpage and push to GitHub
+- [x] [Assignment 1](/assignment1): Use VS Code to create a simple webpage and push to GitHub
