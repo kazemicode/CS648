@@ -1,0 +1,79 @@
+body {
+    width: 960px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1em;
+    line-height: 2em;
+    
+}
+
+ul:first-of-type {
+    list-style-type: none;
+    margin-left: -40px;
+}
+
+h2 {
+    color: #CC1C0D;
+    background-color: #DFE3EF;
+    border: 1px #929CA4 solid;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 1em;
+}
+
+a { 
+    color: #CC1C0D;
+}
+
+img[src*=logo] { 
+    float: left;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+section img[src*=head] {
+    border-radius: 50px;
+    border: 2px #CC1C0D solid;
+    float: left;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+section p {
+    margin-top: 1px;
+}
+
+section div {
+    float: left;
+}
+
+.pricing div {
+    text-align: center;
+    width: 230px; /* appx 1/4 page width */
+    border: 1px #929CA4 solid;
+    border-radius: 10px;
+    margin-right: 5px;
+    padding-top: 10px;
+
+}
+
+.pricing img {
+    float:none;
+}
+
+.pricing div:nth-child(1) h3 {
+	border-top: 10px solid #CC1C0D;
+}
+.pricing div:nth-child(2) h3 {
+	border-top: 10px solid #37A4A4;
+}
+.pricing div:nth-child(3) h3 {
+	border-top: 10px solid #685288;
+}
+.pricing div:nth-child(4) {
+	padding-top: 33px;
+}
+.pricing div:nth-child(4) h3 {
+	border-top: 10px solid black;
+}
