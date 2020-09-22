@@ -14,3 +14,4 @@
 ## Assignments
 - [x] [Assignment 1](/assignment1): Use VS Code to create a simple webpage and push to GitHub
 - [x] [Assignment 2](/assignment2): Create a four-page website for Vecta Corp
+
