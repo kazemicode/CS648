@@ -14,4 +14,6 @@
 ## Assignments
 - [x] [Assignment 1](/assignment1): Use VS Code to create a simple webpage and push to GitHub
 - [x] [Assignment 2](/assignment2): Create a four-page website for Vecta Corp
+- [x] [Assignment 3](/assignment3): Use external and internal CSS to style the Vecta Corp website
+- [ ] [Assignment 4](/assignment4): Using the Flexible Box and Grid Layouts
 
