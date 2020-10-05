@@ -1,5 +1,5 @@
 @mixin socialImage($image, $position, $origin: 0) {
-    background: url($image) $position $origin;
+    background: url($image) ($position*-38) $origin;
 }
 
 @mixin navItem($fontSize: 1em, $marginRight: 10px) {
