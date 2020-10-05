@@ -2,6 +2,12 @@
     background: url($image) $position $origin;
 }
 
+@mixin navItem($fontSize: 1em, $marginRight: 10px) {
+    display: inline;
+    font-size: $fontSize;
+    margin-right: $marginRight;
+}
+
 @mixin break($args...) {
     @if length($args) == 1 {
       @media screen and (max-width: nth($args, 1)) {

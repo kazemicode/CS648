@@ -14,9 +14,7 @@ nav {
       
 
         li {
-            display:inline;
-            font-size:0.8em;
-            margin-right:10px;
+            @include navItem(0.8em);
             @include break(959px) {
                 font-size:1em;margin:0 10px;
               }
