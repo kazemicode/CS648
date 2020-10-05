@@ -12,8 +12,16 @@ main {
     width:940px;
     margin:0 auto;
     padding:0 10px;
+    @include break(959px) {
+        width: 768px;
+      }
+    @include break(767px) {
+        width: 460px;
+      }
+    @include break(459px) {
+        width: 300px;
+      }
 }
-
 
 figure {
     width:400px;
@@ -22,7 +30,99 @@ figure {
     float:left;
     display:block;
     margin:0;
+
+    @include break(959px) {
+        width:inherit;
+        height:140px;
+        float:none;
+        background-position:center;
+      }
+ 
+    @include break(459px) {
+        background-size:contain;
+        height:100px;
+      }
+    
 }
+
+select {
+    @include break(459px) {
+        width:95%;
+      }
+}
+
+/* HEADER */
+header {
+    width:inherit;
+    clear:both;
+    text-align:center;
+    padding-top:40px;
+    img {
+        max-width:100%;
+        height:auto; 
+     
+        @include break(767px) {
+            margin-bottom:100px;
+          }
+        @include break(459px) {
+            margin-bottom:80px;
+          }
+    }
+    h1 {
+        color: $medium-color;
+        font-weight:100;
+        font-size:4em;
+        line-height:0;
+        @include break(959px) {
+            font-size:3em;
+        }
+        @include break(767px) {
+            font-size:2em;
+        }
+        @include break(459px) {
+            &:first-child {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+    }
+    
+    h2 {
+        color: $highlight-color;
+        font-weight:900;
+        font-size:2.5em;
+        line-height:0;
+        margin-bottom:70px;
+
+        @include break(959px) {
+            font-size:1.5em;
+          }
+        @include break(767px) {
+            font-size:1em;
+          }
+        @include break(459px) {
+            font-size:1.4em;
+          }
+    }
+    h3 {
+        color:$dark-color;
+        font-weight:400;
+        font-size:2em;
+        line-height:0;
+        margin-bottom:50px;
+
+       
+        @include break(767px) {
+            font-size:1.5em;
+          }
+        @include break(459px) {
+            color: $highlight-color; font-size:1em;
+          }
+
+    }
+}
+
+
+
 
 
 
@@ -38,16 +138,29 @@ figure {
         font-size:2.5em;
         font-weight:100;
         padding-top:50px;
+
+        @include break(767px) {
+            font-size:2em;padding-top:50px;
+          }
+        @include break(459px) {
+            font-size:1.5em;padding-top:30px;
+          }
     }
 }
 
 #content {
     width:940px;
     margin:20px auto;
+    @include break(959px) {
+        width: inherit;
+      }
     h3 {
         color:$dark-color;
         font-size:2em;
         font-weight:400;
+        @include break(459px) {
+            font-size:1.6em;
+          }
     }
     #products  {
         width:460px;
@@ -58,14 +171,34 @@ figure {
         }
         article {
             margin-bottom: 40px;
+            img {
+                @include break(459px) {
+                    display:none;
+              }
+            }
         }
         h4 {
             line-height:1em;
         }
+        @include break(959px) {
+            width:46%;
+            margin:0 2%;
+          }
+        @include break(767px) {
+            width:96%;
+            margin:0 2%;
+            float:none;
+          }
     }
     #testimonials  {
         width:460px;
         float:right;
+        @include break(959px) {
+            width:46%;margin:0 2%;
+          }
+        @include break(767px) {
+            width:96%;margin:0 2%;float:none;
+          }
     }   
 }
 
@@ -73,41 +206,12 @@ figure {
 .greybar   {
     width:100%;
     height:130px;
-    background: $bright-color;
+    background: $greybar-color;
     text-align:center;
     margin:0 auto;
+    @include break(459px) {
+        display:none;
+      }
 }
-footer {
-    width:100%;
-    height:120px;
-    background:$darker-color;
-    text-align:center;
-    color:$highlight-color;
-    padding-top:50px;
-}
-.social-media {
-    margin:0 auto;
-    width:165px;
-    div {
-        float:left;
-        margin-right:5px;
-        &.one {
-            @include backImage($img-social-media, 0);
-		}
-		&.two {
-            @include backImage($img-social-media, -38px);
-		}
-		&.three {
-            @include backImage($img-social-media, -76px);
-		}
-		&.four {
-            @include backImage($img-social-media, -114px);
-		}
-    }
-    a {
-        display:block;
-        width:36px;
-        height:36px;
-        text-indent:-9999px;
-    }
-}
+
+

@@ -1,0 +1,47 @@
+footer {
+    @include footer(100%, 120px);
+     
+    @include break(459px) {
+        text-align:center;
+      }
+    p {
+        @include break(459px) {
+            float:none;margin:0;
+          }
+
+    }
+    img {
+        @include break(459px) {
+            float:none;margin:0;
+          }
+
+    }
+}
+.social-media {
+    margin:0 auto;
+    width:165px;
+    a {
+        display:block;
+        width:36px;
+        height:36px;
+        text-indent:-9999px;
+    }
+    div {
+        float:left;
+        margin-right:5px;
+        &.one {
+            @include socialImage($img-social-media, 0);
+		}
+		&.two {
+            @include socialImage($img-social-media, -38px);
+		}
+		&.three {
+            @include socialImage($img-social-media, -76px);
+		}
+		&.four {
+            @include socialImage($img-social-media, -114px);
+		}
+    }
+ 
+    
+}
