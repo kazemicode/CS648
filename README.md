@@ -16,5 +16,5 @@
 - [x] [Assignment 2](/assignment2): Create a four-page website for Vecta Corp
 - [x] [Assignment 3](/assignment3): Use external and internal CSS to style the Vecta Corp website
 - [x] [Assignment 4](/assignment4): Using Grid Layout
-- [ ] [Assignment 5](/assignment5): Using Gulp and Sass
+- [x] [Assignment 5](/assignment5): Using Gulp and Sass
 
