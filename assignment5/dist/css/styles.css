@@ -69,38 +69,38 @@ header {
     @media screen and (max-width: 767px) {
       header h1 {
         font-size: 2em; } }
-  @media screen and (max-width: 459px) {
-    header h1:first-child {
-      font-size: 1.4em;
-      margin-bottom: 20px; } }
-  header h2 {
-    color: #FFF;
-    font-weight: 900;
-    font-size: 2.5em;
-    line-height: 0;
-    margin-bottom: 70px; }
-    @media screen and (max-width: 959px) {
-      header h2 {
-        font-size: 1.5em; } }
-    @media screen and (max-width: 767px) {
-      header h2 {
-        font-size: 1em; } }
     @media screen and (max-width: 459px) {
-      header h2 {
-        font-size: 1.4em; } }
-  header h3 {
-    color: #666;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 0;
-    margin-bottom: 50px; }
-    @media screen and (max-width: 767px) {
-      header h3 {
-        font-size: 1.5em; } }
-    @media screen and (max-width: 459px) {
-      header h3 {
-        color: #FFF;
-        font-size: 1em; } }
+      header h1:first-child {
+        font-size: 1.4em;
+        margin-bottom: 20px; } }
+    header h1 h2 {
+      color: #FFF;
+      font-weight: 900;
+      font-size: 2.5em;
+      line-height: 0;
+      margin-bottom: 70px; }
+      @media screen and (max-width: 959px) {
+        header h1 h2 {
+          font-size: 1.5em; } }
+      @media screen and (max-width: 767px) {
+        header h1 h2 {
+          font-size: 1em; } }
+      @media screen and (max-width: 459px) {
+        header h1 h2 {
+          font-size: 1.4em; } }
+    header h1 h3 {
+      color: #666;
+      font-weight: 400;
+      font-size: 2em;
+      line-height: 0;
+      margin-bottom: 50px; }
+      @media screen and (max-width: 767px) {
+        header h1 h3 {
+          font-size: 1.5em; } }
+      @media screen and (max-width: 459px) {
+        header h1 h3 {
+          color: #FFF;
+          font-size: 1em; } }
 
 /* CONTENT */
 #headline {
@@ -171,17 +171,6 @@ header {
         margin: 0 2%;
         float: none; } }
 
-/* FOOTER */
-.greybar {
-  width: 100%;
-  height: 130px;
-  background: #F5F6F6;
-  text-align: center;
-  margin: 0 auto; }
-  @media screen and (max-width: 459px) {
-    .greybar {
-      display: none; } }
-
 nav {
   width: 540px;
   height: 190px;
@@ -220,6 +209,17 @@ nav {
   @media screen and (max-width: 459px) {
     nav {
       margin-bottom: 40px !important; } }
+
+/* FOOTER */
+.greybar {
+  width: 100%;
+  height: 90px;
+  background: #F5F6F6;
+  clear: both;
+  padding-top: 30px; }
+  @media screen and (max-width: 459px) {
+    .greybar {
+      display: none; } }
 
 footer {
   width: 100%;
