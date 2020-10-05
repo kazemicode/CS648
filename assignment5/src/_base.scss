@@ -1,0 +1,113 @@
+
+/* BASIC STYLES */
+body {
+    font-family: $font-body, sans-serif;
+    font-size:1em;
+    line-height:2em;
+    background:url($img-body-bg) $highlight-color repeat-x;
+    margin: 0;
+}
+
+main {
+    width:940px;
+    margin:0 auto;
+    padding:0 10px;
+}
+
+
+figure {
+    width:400px;
+    height:190px;
+    background:url($img-main-logo) no-repeat 0 50px;
+    float:left;
+    display:block;
+    margin:0;
+}
+
+
+
+/* CONTENT */
+#headline {
+    width:100%;
+    height:130px;
+    background:$bright-color;
+    text-align:center;
+    margin:0 auto;
+    h1 {
+        color:$highlight-color;
+        font-size:2.5em;
+        font-weight:100;
+        padding-top:50px;
+    }
+}
+
+#content {
+    width:940px;
+    margin:20px auto;
+    h3 {
+        color:$dark-color;
+        font-size:2em;
+        font-weight:400;
+    }
+    #products  {
+        width:460px;
+        float:left;
+        img {
+            float:left;
+            margin-right:20px;
+        }
+        article {
+            margin-bottom: 40px;
+        }
+        h4 {
+            line-height:1em;
+        }
+    }
+    #testimonials  {
+        width:460px;
+        float:right;
+    }   
+}
+
+/* FOOTER */
+.greybar   {
+    width:100%;
+    height:130px;
+    background: $bright-color;
+    text-align:center;
+    margin:0 auto;
+}
+footer {
+    width:100%;
+    height:120px;
+    background:$darker-color;
+    text-align:center;
+    color:$highlight-color;
+    padding-top:50px;
+}
+.social-media {
+    margin:0 auto;
+    width:165px;
+    div {
+        float:left;
+        margin-right:5px;
+        &.one {
+            @include backImage($img-social-media, 0);
+		}
+		&.two {
+            @include backImage($img-social-media, -38px);
+		}
+		&.three {
+            @include backImage($img-social-media, -76px);
+		}
+		&.four {
+            @include backImage($img-social-media, -114px);
+		}
+    }
+    a {
+        display:block;
+        width:36px;
+        height:36px;
+        text-indent:-9999px;
+    }
+}
