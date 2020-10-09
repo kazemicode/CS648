@@ -1,3 +1,4 @@
+*.json
 .eslintrc.js
 node_modules/
 *.docx
