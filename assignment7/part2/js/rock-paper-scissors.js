@@ -3,13 +3,21 @@ let choices = ["rock", "paper", "scissors"];
 function startGame(){
     var answer = "";
         while(!answer){
-        var input = window.prompt("Rock, paper, or scissors?").toLowerCase().trim();
-        if ( choices.includes(input) )  {
-            answer = input;
+        var input = window.prompt("Rock, paper, or scissors?");
+        if(input != null && choices.includes(input.toLowerCase().trim()) ){
+            answer = input;  
+            determineResult(answer); 
+        }
+        else if(input === null) {
+            alert("Goodbye");
+            break;
+        }
+        else {
+            alert("Invalid move!");
         }
         
     }
-    determineResult(answer);
+    
     
 }
 
