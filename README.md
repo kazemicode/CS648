@@ -19,7 +19,7 @@
 - [x] [Assignment 5](/assignment5): Using Gulp and Sass
 - [x] [Assignment 6](/assignment6): JavaScript Essentials and Control Statements
 - [x] [Assignment 7](/assignment7): JavaScript Functions, Events, and Arrays
-- [ ] [Assignment 8](/assignment8): JavaScript BOM, DOM and Async/AJAX
+- [x] [Assignment 8](/assignment8): JavaScript BOM, DOM and Async/AJAX
 - [ ] [Assignment 9](/assignment9): jQuery Selectors, Commands, Events/Effects, and UI
 - [ ] [Assignment 10](/assignment10): jQuery Traversals, AJAX calls, and Plugins
 - [ ] [Assignment 11](/assignment11): Bootstrap
