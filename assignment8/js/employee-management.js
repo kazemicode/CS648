@@ -102,7 +102,7 @@ var processEntries = function () {
       
     }
 
-    valid = !((ext === "") && (name === "") && (position === ""));
+    valid = !((ext === "") || (name === "") || (position === ""));
     if(valid) {
         // add employee
         employee_list.push([name, position, ext]);
