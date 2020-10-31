@@ -6,7 +6,43 @@
   <link href="css/normalize.css" type="text/css" rel="stylesheet">
   <link href="css/styles.css" type="text/css" rel="stylesheet">
   <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-  <script src="jquery-3.5.1.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script>
+	  // A $( document ).ready() block.
+	$( document ).ready(function() {
+		// Select all h2 elements within section and aside and add css properties
+		$("section h2, aside h2").css("border", "solid black 1px");
+		$("section h2, aside h2").css("color", "#CC1C0D");
+		$("section h2, aside h2").css("padding", "3px 0px 3px 20px"); // padding of 3px to top and bottom and 20px to left 
+		$("section h2, aside h2").css("border-radius", "0px 5px 0px 5px"); //border-radius of 5px to top-left and bottom-right
+		$("section h2, aside h2").css("background-color", "#DFE3E6");
+
+		// Programmatically add the navigation class to all 5 navigation menu elements
+		$("nav a").addClass("navigation");
+		// Select all navigation class elements and add css properties
+		$(".navigation").css("border", "solid #929CA4 1px");
+		$(".navigation").css("color", "#CC1C0D");
+		$(".navigation").css("padding", "3px 0px 3px 20px"); // padding of 3px to top and bottom and 20px to left 
+		$(".navigation").css("background-color", "#DFE3E6");
+
+
+		// Remove vprospect, vconvert, and vretain classes from main section p tags
+		$("main section p").removeClass("vprospect vconvert vretain");
+
+		// Append  "<br> Chevy Dealers Association" after the word "President" 
+		$("aside p:last()").append("<br> Chevy Dealers Association");
+
+		// Wrap testimonial in a q tag
+		$("aside p:first()").wrap("<q></q>");
+		
+		
+
+		
+
+		
+	});
+
+  </script>
 </head>
 
 <body>
