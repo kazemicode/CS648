@@ -23,8 +23,11 @@ $(document).ready(function(){
         content : "Contact us for additional information"
     })
 
-    // tabs for homepage
-    $("#solution-tabs").tabs({
-        collapsible: true,
+    // tabs for solutions (homepage)
+    $("#solution-tabs").tabs();
+
+    // accordion for testimonials (homepage)
+    $("#testimonial-accordion").accordion({
+        collapsible: true
     });
 });
