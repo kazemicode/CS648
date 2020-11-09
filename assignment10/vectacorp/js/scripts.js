@@ -32,5 +32,6 @@ $(document).ready(function(){
     });
 
     // tabs for management team section (aboutus)
-    $("#management").tabs().addClass("ui-tabs-vertical ui-helper-clearfix")
+    $("#management").tabs().addClass("ui-tabs-vertical")
+
 });
