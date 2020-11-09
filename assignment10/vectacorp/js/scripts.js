@@ -30,4 +30,7 @@ $(document).ready(function(){
     $("#testimonial-accordion").accordion({
         collapsible: true
     });
+
+    // tabs for management team section (aboutus)
+    $("#management").tabs().addClass("ui-tabs-vertical ui-helper-clearfix")
 });
