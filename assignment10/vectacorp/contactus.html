@@ -16,6 +16,8 @@
 	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="js/jquery.mobilemenu.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery-smooth-scroll.js"></script>
 	<script src="js/scripts.js"></script>
 </head>
 <body>
@@ -58,14 +60,14 @@
 			    <label for="vConvert"><input type="checkbox" name="product" value="vConvert" id="vConvert">vConvert 2.0</label>
 			    <label for="vRetain"><input type="checkbox" name="product" value="vRetain" id="vRetain">vRetain 1.0</label>
 			    
-			    <br>
+			    <br><br>
 			    What is your current infrastructure?<br>
 			    <label for="Mac"><input type="radio" name="infrastructure" value="Mac" id="Mac">Mac</label>
 			    <label for="Linux"><input type="radio" name="infrastructure" value="Linux" id="Linux">Linux</label>
 			    <label for="Unix"><input type="radio" name="infrastructure" value="Unix" id="Unix">Unix</label>
 			    <label for="Windows"><input type="radio" name="infrastructure" value="Windows" id="Windows">Windows</label>
 
-			    <br>
+			    <br><br>
 			    How many employees do you have?
 			    <select name="companysize">
                     <option value="1-10">1-10</option>
@@ -73,7 +75,7 @@
                     <option value="101-1000">101-1000</option>
                     <option value="More than 1000">More than 1000</option>
 		        </select>
-                
+                <br><br>
 			    How did you hear about us?
 			    <select name="hearaboutus" multiple="" size="5">
                     <option value="Magazine Ad">Magazine Ad</option>
@@ -81,7 +83,8 @@
                     <option value="TV Ad">TV Ad</option>
                     <option value="Word of Mouth">Word of Mouth</option>
                     <option value="Other">Other</option>
-		        </select>
+				</select>
+				<br><br>
                 
 			    Questions or comments for our sales representatives?
 			    <textarea name="questions" size="30" rows="5"></textarea>
