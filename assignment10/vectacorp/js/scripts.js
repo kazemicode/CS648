@@ -22,4 +22,9 @@ $(document).ready(function(){
     $('nav ul li a:last').tooltip({
         content : "Contact us for additional information"
     })
+
+    // tabs for homepage
+    $("#solution-tabs").tabs({
+        collapsible: true,
+    });
 });
