@@ -1,0 +1,21 @@
+.carousel-indicators > li {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
+
+#solutions {
+    height: 300px; 
+    overflow-y: scroll;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+#solutions::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+#solutions {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
