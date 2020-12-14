@@ -2,28 +2,43 @@ import React, { Component } from 'react'
 import Filters from './Filters'
 import ProductTable from './ProductTable'
 import ProductForm from './ProductForm'
+import $ from 'jquery'
 
-let PRODUCTS = {
-    '1': {id: 1, category: 'Music', price: '$459.99', name: 'Clarinet'},
-    '2': {id: 2, category: 'Music', price: '$5,000', name: 'Cello'},
-    '3': {id: 3, category: 'Music', price: '$3,500', name: 'Tuba'},
-    '4': {id: 4, category: 'Furniture', price: '$799', name: 'Chaise Lounge'},
-    '5': {id: 5, category: 'Furniture', price: '$1,300', name: 'Dining Table'},
-    '6': {id: 6, category: 'Furniture', price: '$100', name: 'Bean Bag'}
-};
 
 class Products extends Component {
     constructor(props) {
         super(props)
         this.state = {
             filterText: '',
-            products: PRODUCTS
+            products: []
         }
         this.handleFilter = this.handleFilter.bind(this)
         this.handleDestroy = this.handleDestroy.bind(this)
         this.handleSave = this.handleSave.bind(this)
     }
 
+    
+    componentDidMount() {
+        this.getData();
+    }
+
+    // asynchronously load contents of the url
+    // return a Promise that resolves when res is loaded
+    getData = () => {
+        fetch('http://localhost:3001/product/get/')
+        .then(res => res.json())
+        .then(
+            result => {
+            this.setState({
+                products: result
+            })
+            },
+            error => {
+            console.log('Error fetching results:', error);
+            }
+        )
+    }
+    
     handleFilter(filterInput) {
         this.setState(filterInput)
     }
@@ -32,19 +47,31 @@ class Products extends Component {
         if (!product.id) {
             product.id = new Date().getTime()
         }
-        this.setState((prevState) => {
-            let products = prevState.products
-            products[product.id] = product
-            return { products }
-        })
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:3001/product/create/',
+            data: product
+          }).then(() => {
+            this.getData();
+          });
     }
 
+    handleUpdateStatus = productId => {
+        $.ajax({
+          type: 'PUT',
+          url: `http://localhost:3001/product/update/${productId}`
+        }).then(() => {
+          this.getData()
+        })
+      }
+
     handleDestroy(productId) {
-        this.setState((prevState) => {
-            let products = prevState.products
-            delete products[productId]
-            return { products }
-        });
+        $.ajax({
+            type: 'DELETE',
+            url: `http://localhost:3001/product/delete/${productId}`
+          }).then(() => {
+            this.getData()
+          });
     }
 
     render () {

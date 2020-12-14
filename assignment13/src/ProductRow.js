@@ -11,11 +11,17 @@ class ProductRow extends Component {
     }
 
     render () {
+        let instock = "Out of Stock";
+        if(this.props.product.category){
+            instock = "In Stock";
+        }
         return (
             <tr>
                 <td>{this.props.product.name}</td>
                 <td>{this.props.product.category}</td>
-                <td>{this.props.product.price}</td>
+                <td>${this.props.product.price}</td>
+                <td>{instock}</td>
+                
                 <td class="text-right"><button onClick={this.destroy} class="btn btn-info">Delete</button></td>
             </tr>
         )
