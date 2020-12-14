@@ -83,7 +83,9 @@ class Products extends Component {
                 <ProductTable 
                     products={this.state.products}
                     filterText={this.state.filterText}
-                    onDestroy={this.handleDestroy}></ProductTable>
+                    onDestroy={this.handleDestroy}
+                    onUpdate={this.handleUpdateStatus}>
+                </ProductTable>
                 <ProductForm
                     onSave={this.handleSave}></ProductForm>
             </div>

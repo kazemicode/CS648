@@ -16,14 +16,16 @@ class ProductTable extends Component {
         let rows = []
 
         productsArray.forEach((product) => {
-            if (product.name.indexOf(this.props.filterText) === -1) {
+            if (product.name.toLowerCase().indexOf(this.props.filterText.toLowerCase()) === -1) {
                 return
             }
             rows.push (
                 <ProductRow 
                     product={product} 
                     key={product.id} 
-                    onDestroy={this.handleDestroy}></ProductRow>
+                    onDestroy={this.handleDestroy}
+                    updateStatus={this.handleUpdateStatus}>
+                </ProductRow>
             )
         })
 
